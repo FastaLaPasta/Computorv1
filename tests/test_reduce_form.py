@@ -38,6 +38,7 @@ class TestReduceForm(unittest.TestCase):
         result = reduce_form(left.copy(), right)
         self.assertEqual(result, {2: 5.0})
 
+
 class TestFormatReduceForm(unittest.TestCase):
     def test_standard_equation(self):
         self.assertEqual(
