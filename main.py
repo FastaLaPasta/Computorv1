@@ -1,5 +1,6 @@
 import sys
 from parser import parse_equation
+from reduce_form import reduce_form
 
 
 if __name__ == "__main__":
@@ -16,6 +17,5 @@ if __name__ == "__main__":
     left, right = equation.split("=")
     left_side = parse_equation(left)
     right_side = parse_equation(right)
-
-    print("Membre gauche :", left_side)
-    print("Membre droit  :", right_side)
+    reduce_equation = reduce_form(left_side, right_side)
+    print(reduce_equation)
