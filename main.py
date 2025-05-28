@@ -1,6 +1,7 @@
 import sys
 from parse import parse_equation
 from reduce_form import reduce_form
+from get_degree import get_degree
 
 
 if __name__ == "__main__":
@@ -18,4 +19,4 @@ if __name__ == "__main__":
     left_side = parse_equation(left)
     right_side = parse_equation(right)
     reduce_equation = reduce_form(left_side, right_side)
-    print(reduce_equation)
+    print(get_degree(reduce_equation))
