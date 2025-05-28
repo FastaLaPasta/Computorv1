@@ -32,7 +32,7 @@ def solve(equation: Dict[int, float]) -> str:
             return f"Discriminant is strictly positive, the two solutions are\n{x1}\n{x2}"
         elif delta == 0:
             x = -b / (2 * a)
-            return f"Discriminant = 0. One real solution:\nx = {x}"
+            return f"The solution is:\n{x}"
         else:
             real = -b / (2 * a)
             imag = (abs(delta)**0.5) / (2 * a)
