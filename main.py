@@ -12,7 +12,6 @@ def main(equation: str):
     reduce_equation = reduce_form(left_side, right_side)
 
     print(f"Reduced form: {format_reduced_form(reduce_equation)}")
-    print(f"Polynomial degree: {get_degree(reduce_equation)}")
     print(solve(reduce_equation))
 
 

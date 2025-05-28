@@ -1,6 +1,12 @@
-import math
 from typing import Dict
 from get_degree import get_degree
+
+
+def print_degree(equation: Dict[int, float]) -> int:
+    degree = get_degree(equation)
+    if 0 < degree < 3:
+        print(f"Polynomial degree: {degree}")
+    return degree
 
 
 def solve(equation: Dict[int, float]) -> str:
@@ -11,7 +17,7 @@ def solve(equation: Dict[int, float]) -> str:
     Get the degree of the equation,
     then process to solve it by using the delta if necessary.
     """
-    degree = get_degree(equation)
+    degree = print_degree(equation)
 
     a = equation.get(2, 0)
     b = equation.get(1, 0)
