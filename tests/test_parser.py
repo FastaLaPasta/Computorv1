@@ -2,7 +2,7 @@ import unittest
 import sys
 import os
 
-from parser import parse_equation
+from parse import parse_equation
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 

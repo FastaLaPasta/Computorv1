@@ -1,5 +1,5 @@
 import sys
-from parser import parse_equation
+from parse import parse_equation
 from reduce_form import reduce_form
 
 
