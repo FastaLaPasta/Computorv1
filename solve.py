@@ -4,6 +4,13 @@ from get_degree import get_degree
 
 
 def solve(equation: Dict[int, float]) -> str:
+    """
+    equation: dict, dict of the equation on a reduce form. ex: f(x) = 0
+    return: str, value(s) of x for f(x) = 0.
+
+    Get the degree of the equation,
+    then process to solve it by using the delta if necessary.
+    """
     degree = get_degree(equation)
 
     a = equation.get(2, 0)
