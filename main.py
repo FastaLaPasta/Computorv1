@@ -1,7 +1,6 @@
 import sys
 from parse import parse_equation
 from reduce_form import reduce_form
-from get_degree import get_degree
 from solve import solve
 
 
