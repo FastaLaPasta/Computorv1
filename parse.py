@@ -2,6 +2,12 @@ from typing import Dict
 
 
 def parse_equation(expression: str) -> Dict[int, float]:
+    """
+    expression: str, A string representation of an equation.
+    return: dict, Dict of power/coef for each part of the equation.
+
+    return a dictionnary within the different parts of the equation.
+    """
     expr = expression.replace(" ", "").replace("X", "x").replace("-", "+-")
     if expr.startswith('+'):
         expr = expr[1:]
